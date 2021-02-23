@@ -18,10 +18,6 @@ namespace TriggerTestAssieme
         public static readonly string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
         public static readonly string CONNECTION_STRING = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + projectDirectory + @"\DriverDB.mdf;Integrated Security=True;Connect Timeout=30";
 
-        /*private BindingSource bsDriver = new BindingSource();
-        private DataTable dtDriver;
-        private SqlDataAdapter daDriver;*/
-
         public Form1()
         {
             InitializeComponent();
@@ -31,14 +27,6 @@ namespace TriggerTestAssieme
         {
             dgvDriver.Rows.Clear();
             dgvData(cmbNazioni.Text);
-            /*Query($"SELECT * FROM fNazioni('GB')", out daDriver);
-            if (daDriver != null)
-            {
-                dtDriver = new DataTable();
-                daDriver.Fill(dtDriver);
-                bsDriver.DataSource = dtDriver;
-            }
-            dgvDriver.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);*/
         }
 
         private void Query(string selectCommand, out SqlDataAdapter da)

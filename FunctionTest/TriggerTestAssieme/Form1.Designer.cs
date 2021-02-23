@@ -99,6 +99,11 @@ namespace TriggerTestAssieme
             // nPodiums
             // 
             this.nPodiums.Location = new System.Drawing.Point(584, 85);
+            this.nPodiums.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nPodiums.Name = "nPodiums";
             this.nPodiums.Size = new System.Drawing.Size(61, 20);
             this.nPodiums.TabIndex = 6;
